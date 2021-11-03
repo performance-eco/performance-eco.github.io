@@ -1,0 +1,189 @@
+//Index
+ 
+main{
+    .h2-index{
+        font-family: 'Rubik', sans-serif;
+        font-size: 3rem;
+        color: $azulOscuroH2;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    .p-index{
+        font-family: 'Rubik', sans-serif;
+        color: $azulOscuro;
+        margin: 25px;
+        line-height: 1.5rem;
+    }
+    .h4-index{
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        color: $azulOscuro;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    .carousel{
+        padding-bottom: 100px;
+    }
+    .section-ns{
+        div{
+            .card{
+                border: none;
+            }
+        }
+        .serv-index{
+            padding: 20px;
+            margin-top: 70px;
+            .h2-index_servicios{
+                color: $azulOscuroH2;
+                text-align: center;
+            }
+        }
+        .card-img-top{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .prueba-ct{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        .card{
+            padding: 50px;
+            font-size: 24px;
+            width: 20%;
+        }
+        .cardL{
+            text-align: center;
+            justify-items: left;
+            padding: 10px;
+        }
+        .text-center{
+            text-align: center;
+            justify-items: center;
+ 
+        }
+        .text-end{
+            text-align: center;
+            justify-items: end;
+        }
+    }
+    .section-ct{
+        margin-top: 170px;
+        .como-trabajamos{
+            padding: 50px;
+            font-size: 24px;
+        }
+        .section-ct_text{
+            display: flex;
+            flex-direction: column;
+           
+            .section-ct_text1{
+                width: 25%;
+                text-align: left;
+                justify-content: center;
+                font-family: 'Rubik', sans-serif;
+                color: $azulOscuro;
+                margin: 40px;
+                animation-fill-mode: none;
+                animation-delay: 1s;  
+            }
+            .section-ct_text2{
+                text-align: center;
+                justify-content: center;
+                font-family: 'Rubik', sans-serif;
+                color: $azulOscuro;
+                animation-fill-mode: none;
+                animation-delay: 2s;
+            }
+            .section-ct_text3{
+                text-align: right;
+                justify-items: center;
+                font-family: 'Rubik', sans-serif;
+                color: $azulOscuro;
+                margin-right: 40px;
+                animation-fill-mode: none;
+                animation-delay: 3s;
+            }
+           
+        }
+        .wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .button {
+                margin-top: 50px;
+                width: 270px;
+                height: 60px;
+                font-family: 'Rubik', sans-serif;
+                font-size: 20px;
+                letter-spacing: none;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+                background-color: $azulOscuro;
+                border: none;
+                border-radius: 45px;
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+                outline: none;
+                padding: 5px;
+                }
+              .button:hover {
+                background-color: $verdeTurquesa;
+                box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+                color: #fff;
+                transform: translateY(-7px);
+                }
+            }
+        .btn-CT{
+            .btn-cotizacion{
+            display: block;
+            height: 120px;
+            width: 120px;
+            background-color: $verdeTurquesa;
+            border: none;
+            border-radius: 50%;
+            padding: 25px;
+            box-shadow: grey;
+            .btn-cotizacion__h4{
+                font-family: 'Rubik', sans-serif;
+                font-weight: bolder;
+                color: snow;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+ 
+            }
+            &:hover{
+                transform: scale(1.2, 1.2);
+                }
+            }
+        }
+    .section-eco{
+            margin-top: 50px;
+            background-color: rgb(174, 226, 174);
+        }
+   
+    .section-clientes{
+        margin-top: 100px;
+        width: 95%;
+        background-color: brown;
+        }
+    }
+}
+     
+ 
+ 
+@media (max-width: 480px){
+    main{
+        .seccion-clientes{
+            display: grid;
+            grid-template-columns: 1fr;
+           
+        }
+    }
+}
