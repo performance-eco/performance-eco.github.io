@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+footer {
+  width: 100%;
+  background-color: #4fc4aa;
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  footer .footer__h6 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-style: oblique;
+    color: white;
+    text-align: center; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center; }
+  .header nav {
+    height: 100vh; }
+    .header nav img {
+      border-radius: 50%;
+      margin-left: 30px; }
+    .header nav .hidden {
+      display: none; }
+    .header nav .navbar-toggler .navbar-toggler-icon {
+      color: #6c7fa5; }
+    .header nav .navbar-nav {
+      background: white;
+      padding: 0px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      display: inline-block; }
+      .header nav .navbar-nav li {
+        display: inline-block;
+        text-align: center;
+        list-style-type: none;
+        padding: 5px; }
+        .header nav .navbar-nav li a {
+          color: #6c7fa5;
+          text-decoration: none;
+          display: inline-block;
+          padding: 20px;
+          box-shadow: 0 5px 10px #efefef; }
+          .header nav .navbar-nav li a:hover {
+            background-color: white;
+            color: #4fc4aa; }
+          .header nav .navbar-nav li a.--activo {
+            color: #4fc4aa;
+            font-weight: bold; }
+          .header nav .navbar-nav li a.inicio {
+            color: #6c7fa5;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif;
+            font-size: 25px; }
+          .header nav .navbar-nav li a.quienesSomos {
+            color: #6c7fa5;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif;
+            font-size: 25px; }
+          .header nav .navbar-nav li a.servicios {
+            color: #6c7fa5;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif;
+            font-size: 25px; }
+          .header nav .navbar-nav li a.trabajos {
+            color: #6c7fa5;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif;
+            font-size: 25px; }
+          .header nav .navbar-nav li a.contacto {
+            color: #6c7fa5;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif;
+            font-size: 25px; }
+
+.icons-header {
+  font-size: 35px;
+  display: flex;
+  flex-direction: row; }
+  .icons-header .icons-header_ig {
+    padding-right: 50px; }
+    .icons-header .icons-header_ig:hover {
+      cursor: pointer; }
+  .icons-header .icons-header_fb:hover {
+    cursor: pointer; }
+
+main .qs-container {
+  max-width: 85%;
+  width: 100%; }
+
+main .h2-qs {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3rem;
+  color: #516386;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px; }
+
+main .p-qs {
+  font-family: 'Rubik', sans-serif;
+  color: #6c7fa5;
+  line-height: 1.5rem;
+  margin: 20px;
+  text-align: center; }
+
+main .btn-qs {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  main .btn-qs .button {
+    margin-top: 50px;
+    width: 270px;
+    height: 60px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    letter-spacing: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: #6c7fa5;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    padding: 5px; }
+  main .btn-qs .button:hover {
+    background-color: #4fc4aa;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px); }
+
+.main-contacto {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+form .fieldset-cont {
+  font-family: 'Rubik', sans-serif;
+  color: #6c7fa5;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: lightgray;
+  padding: 20px;
+  margin: 100px;
+  width: 50%;
+  justify-items: center; }
+  form .fieldset-cont div .cotizacion {
+    font: bold;
+    text-align: center; }
+  form .fieldset-cont div div .cotizacion-labels .inputs {
+    border-style: solid;
+    border-style: solid; }
+
+.p-cont {
+  font-family: 'Rubik', sans-serif;
+  color: #6c7fa5;
+  line-height: 1.5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 24px; }
+
+.p-cont-A {
+  padding: 30px; }
+
+main .h2-index {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3rem;
+  color: #516386;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px; }
+
+main .p-index {
+  font-family: 'Rubik', sans-serif;
+  color: #6c7fa5;
+  margin: 25px;
+  line-height: 1.5rem; }
+
+main .h4-index {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  color: #6c7fa5;
+  padding: 10px;
+  margin-top: 50px; }
+
+main .carousel {
+  padding-bottom: 100px; }
+
+main .section-ns div .card {
+  border: none; }
+
+main .section-ns .serv-index {
+  padding: 20px;
+  margin-top: 70px; }
+  main .section-ns .serv-index .h2-index_servicios {
+    color: #516386;
+    text-align: center; }
+
+main .section-ns .card-img-top {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px; }
+
+main .prueba-ct {
+  width: 95%;
+  display: flex;
+  flex-direction: column; }
+  main .prueba-ct .card {
+    padding: 50px;
+    font-size: 24px;
+    width: 20%; }
+  main .prueba-ct .cardL {
+    text-align: center;
+    justify-items: left;
+    padding: 10px; }
+  main .prueba-ct .text-center {
+    text-align: center;
+    justify-items: center; }
+  main .prueba-ct .text-end {
+    text-align: center;
+    justify-items: end; }
+
+main .section-ct {
+  margin-top: 170px; }
+  main .section-ct .como-trabajamos {
+    padding: 50px;
+    font-size: 24px; }
+  main .section-ct .section-ct_text {
+    display: flex;
+    flex-direction: column; }
+    main .section-ct .section-ct_text .section-ct_text1 {
+      width: 25%;
+      text-align: left;
+      justify-content: center;
+      font-family: 'Rubik', sans-serif;
+      color: #6c7fa5;
+      margin: 40px;
+      animation-fill-mode: none;
+      animation-delay: 1s; }
+    main .section-ct .section-ct_text .section-ct_text2 {
+      text-align: center;
+      justify-content: center;
+      font-family: 'Rubik', sans-serif;
+      color: #6c7fa5;
+      animation-fill-mode: none;
+      animation-delay: 2s; }
+    main .section-ct .section-ct_text .section-ct_text3 {
+      text-align: right;
+      justify-items: center;
+      font-family: 'Rubik', sans-serif;
+      color: #6c7fa5;
+      margin-right: 40px;
+      animation-fill-mode: none;
+      animation-delay: 3s; }
+  main .section-ct .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main .section-ct .wrap .button {
+      margin-top: 50px;
+      width: 270px;
+      height: 60px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 20px;
+      letter-spacing: none;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      background-color: #6c7fa5;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+      padding: 5px; }
+    main .section-ct .wrap .button:hover {
+      background-color: #4fc4aa;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: #fff;
+      transform: translateY(-7px); }
+  main .section-ct .btn-CT .btn-cotizacion {
+    display: block;
+    height: 120px;
+    width: 120px;
+    background-color: #4fc4aa;
+    border: none;
+    border-radius: 50%;
+    padding: 25px;
+    box-shadow: grey; }
+    main .section-ct .btn-CT .btn-cotizacion .btn-cotizacion__h4 {
+      font-family: 'Rubik', sans-serif;
+      font-weight: bolder;
+      color: snow;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px; }
+    main .section-ct .btn-CT .btn-cotizacion:hover {
+      transform: scale(1.2, 1.2); }
+  main .section-ct .section-eco {
+    margin-top: 50px;
+    background-color: #aee2ae; }
+  main .section-ct .section-clientes {
+    margin-top: 100px;
+    width: 95%;
+    background-color: brown; }
+
+@media (max-width: 480px) {
+  main .seccion-clientes {
+    display: grid;
+    grid-template-columns: 1fr; } }
+
+main section row {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px;
+  clear: both; }
+  main section row::after {
+    content: "";
+    display: table; }
+
+main section .column {
+  display: flex;
+  width: 33.33%;
+  padding: 5px; }
