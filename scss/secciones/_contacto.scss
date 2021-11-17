@@ -1,0 +1,89 @@
+//Contacto
+.main-contacto{
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    form{
+        .fieldset-cont{
+                font-family: 'Rubik', sans-serif;
+                color: $azulOscuroH2;
+                border-style: solid;
+                box-sizing: border-box;
+                border: solid;
+                border-radius: 2%;
+                padding: 20px;
+                margin: 100px;
+                width: 80%;
+                justify-items: center;
+                .section-title{
+                    
+                    .cotizacion-title{
+                        font: bold;
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+                }
+                
+                div{
+                    .cotizacion-labels{
+                        margin: 20px;
+                        
+                        .inputs{
+                            border-style: solid;
+                            border-width: 1px;
+                            background-color: rgb(241, 240, 240);
+                            }  
+                        select{
+                            border-style: solid;
+                            background-color: rgb(241, 240, 240);
+                        }
+                        textarea{
+                            border-style: solid;
+                            background-color: rgb(241, 240, 240);
+                        }                              
+                    }
+                } 
+            }  
+    }
+    
+    
+    .p-cont{
+        font-family: 'Rubik', sans-serif;
+        color: $azulOscuroH2;
+        line-height: 1.5rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 24px;
+        justify-content: center;
+        ul{
+            li{
+                margin-top: 30px;
+                margin-left: 50px;    
+                list-style-type: none;
+                padding: 5px;
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+            }
+        }
+    }
+    .p-cont-A{
+        padding: 30px;
+    }
+}
+
+@media (max-width:768px){
+    .main-contacto{
+        form{
+            
+        .fieldset-cont{
+            margin: 30px;
+        }
+    }
+}
+}

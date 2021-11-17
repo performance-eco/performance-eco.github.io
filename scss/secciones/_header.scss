@@ -1,0 +1,127 @@
+//Header
+ 
+.header{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    align-items: center;
+    box-shadow: 3px 4px 2px 3px rgba(0,0,0,0.37);
+    .container{
+        nav{
+            a{
+                img{
+                    border-radius: 50%;
+                    margin-left: 30px;
+                }
+            }
+            
+            .hidden{
+                display: none;
+            }
+            
+            .navbar-toggler{
+                .navbar-toggler-icon{
+                    color: $azulOscuro;
+                }
+            }
+            .navbar-nav{
+                background: white;
+                padding: 0px;
+                width: 90%;
+                max-width: 1000px;
+                margin: 20px auto;
+                display:inline-block;
+                li{
+                    display: inline-block;
+                    text-align: center;
+                    list-style-type: none;
+                    padding: 5px;
+                    a{
+                        color: $azulOscuro;
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 20px;
+                        box-shadow: 0 5px 10px #efefef;
+                        &:hover{
+                            background-color: $verdeTurquesa
+                        }
+                        &.--activo{
+                            color: $verdeTurquesa;
+                            font-weight: bold;
+                        }
+                        &.inicio{
+                            color: $azulOscuro;
+                            text-decoration: none;
+                            font-family: 'Rubik', sans-serif;
+                            font-size: 25px;
+                        }
+                        &.quienesSomos{
+                            color: $azulOscuro;
+                            text-decoration: none;
+                            font-family: 'Rubik', sans-serif;
+                            font-size: 25px;
+                        }
+                        &.servicios{
+                            color: $azulOscuro;
+                            text-decoration: none;
+                            font-family: 'Rubik', sans-serif;
+                            font-size: 25px;
+                        }
+                        &.trabajos{
+                            color: $azulOscuro;
+                            text-decoration: none;
+                            font-family: 'Rubik', sans-serif;
+                            font-size: 25px;
+                        }
+                        &.contacto{
+                            color: $azulOscuro;
+                            text-decoration: none;
+                            font-family: 'Rubik', sans-serif;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+.icons-header{
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    
+    .icons-header_ig{
+        size: 35px;
+        padding-right: 50px;
+        color: black;
+        &:hover{
+            cursor: pointer;
+        }
+    }    
+    .icons-header_wapp{
+        &:hover{
+            cursor: pointer;
+        }
+    }    
+   
+} 
+
+
+@media(max-width: 425px){
+    .header{
+        align-items: right;
+        justify-content: right;
+        .container{
+            nav{
+                .navbar-nav{
+                    margin-left: 150px;
+                }
+            }
+        }
+    }
+}

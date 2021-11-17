@@ -1,0 +1,74 @@
+main{
+    div{
+        .h2-serv{
+        font-family: 'Rubik', sans-serif;
+        font-size: 3rem;
+        color: $azulOscuroH2;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+    	}
+        .p-principal{
+            font-family: 'Rubik', sans-serif;
+            font-size: 2rem;
+            color: $azulOscuro;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+    }
+    .nuestros-serv{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 card9"
+        "card10 card11 card12"
+        "card13 card14 card14";
+        
+        .card{
+            border: none;
+            margin-left: 18%;
+            img{
+                border-radius: 50%;
+                width: 250px;
+                height: 250px;
+                padding: 2px;
+                margin: 20px;
+            }
+            .card-body{
+                text-align: center;
+                font-family: 'Rubik', sans-serif;
+                color: $azulOscuroH2;
+            }
+        }
+    }
+       
+}
+
+@media(max-width: 768px){
+    main{
+        .nuestros-serv{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8"
+            "card9 card10"
+            "card11 card12"
+            "card13 card14";
+        }
+    }
+}
+
+
+
+

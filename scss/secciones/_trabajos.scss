@@ -1,0 +1,46 @@
+//Trabajos
+main{
+    div{
+        h2{
+            font-family: 'Rubik', sans-serif;
+            font-size: 3rem;
+            color: $azulOscuroH2;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+    }
+    section{
+        .row{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            flex: wrap;
+            justify-content: center;
+            margin: 100px;
+            margin-top: 10px;
+            clear: both;
+            .trabajos-titles{
+                font-family: 'Rubik', sans-serif;
+                color: $azulOscuroH2;
+                margin-top: 100px;
+                padding: 10px;
+            }
+            &::after{
+                content: "";
+                display: table;
+            }
+        }    
+        .column {
+            display: flex;
+            width: 33.33%;
+            padding: 5px;
+            .img-trabajos{
+                width: 100%;
+                
+            }
+        }
+    }
+}
+

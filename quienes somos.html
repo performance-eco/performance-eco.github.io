@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
+    <link rel=icon href=img/favicon.png sizes="16x16" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Brindamos un servicio de limpieza, protección y renovación de superficies usando productos con nanotecnología francesa ecológica. Nuestro talentoso equipo trabaja arduamente para ofrecer los mejores servicios de limpieza a los clientes. Personalizamos nuestras ofertas basadas en necesidades específicas. Contáctenos y le enviaremos una cotización.">
    <meta name="keywords"  content="limpieza, proteccion, renovacion, como trabajamos, nanotecnologia, cotizacion, contacto, solucion, ecologico, clientes">
@@ -49,10 +50,12 @@
             </div>
             <div class="icons-header">
               <div class="icons-header_ig">
-                <i class="fab fa-instagram"></i>
+                <a href="https://www.instagram.com/performance_eco.uy/">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </div>
-              <div class="icons-header_fb">
-                <i class="fab fa-facebook"></i>
+              <div class="icons-header_wapp">
+                <i class="fab fa-whatsapp"></i>
               </div>
             </div>
     
@@ -63,43 +66,63 @@
     <main class="qs-container">
         <section>
             <h2 class="h2-qs">Sobre Nosotros</h2>
-                <p class="p-qs">Nuestra empresa concede en la ciudad de Curitiba (Brasil), 
-                  en la cual fabrica productos de limpieza, renovación y protección, a base de nanotecnología, 
+                <p class="p-qs">Nuestra empresa concede en la ciudad de Curitiba (Brasil), donde se fabrica productos de limpieza, renovación y protección, a base de nanotecnología, 
                   con patentes adquiridas en Francia y Alemania. Los productos tienen presencia en más de 80 países, 
                   al igual que referencias de obras en las principales capitales del mundo (Londres, París, Moscow y Roma, 
                   entre otros). Las siete plantas de fabricación, así como sus más de 80 filiales comerciales, 
-                  son empresas orgullosamente sustentables, produciendo con 0 impacto ambiental.</p>
+                  son empresas sustentables, produciendo sin generar algún impacto ambiental.</p>
                   <div class="btn-qs">
-                    <button class="button">Contáctenos</button>
+                    <a href="contacto.html">
+                      <button class="button">Contáctenos</button>
+                    </a>
                   </div>   
         </section>
        
-        <section>
+        <section class="como-trabajamos">
           <div class="wow animate__animated animate__bounceInDown">
             <h2 class="h2-index">¿Cómo Trabajamos?</h2>
           </div>
-          <div class="CT-text">
-            <div class="wow section-CT animate__animated animate__bounceInLeft">
-                <h4 class="section-CT__h4">1. Cotización</h4>
-                <p>Elaboramos una cotización, basado en la cantidad de productos y horas de trabajo que requiere recuperar y proteger las superficies.</p>
+          <div class="wow section-ct_text1 animate__animated animate__bounceInLeft">  
+            <div class="card text-center card1" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">1. Cotización</h5>
+              <p class="card-text">Elaboramos una cotización, basada en la cantidad de productos y horas de trabajo requeridas.</p>
             </div>
-            <div class="wow section-CT-1 animate__animated animate__bounceInLeft">    
-                <h4 class="section-CT-1__h4"> 2. Muestreo</h4>
-                <p class="p-CT">Se elabora un muestreo en una pequeña parte de la superficie total.</p>
+          </div>  
+        </div>
+        <div class="wow section-ct_text2 animate__animated animate__bounceInLeft">
+          <div class="card text-center card2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">2. Muestreo</h5>
+              <p class="card-text">Se elabora un muestreo en una pequeña parte de la superficie total.</p>
             </div>
-            <div class="wow section-CT-2 animate__animated animate__bounceInLeft">    
-                <h4 class="section-CT-2__h4"> 3. Solución</h4>
-                <p>Una vez aprobada la muestra y cotizacion, se agenda una fecha para la realización del trabajo.</p>
+        </div>    
+        </div>
+        <div class="wow section-ct_text3 animate__animated animate__bounceInLeft">
+          <div class="card text-center card3" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">3. Solución</h5>
+              <p class="card-text">Una vez aprobada la muestra y cotización, se agenda una fecha para la realización del trabajo.</p>
             </div>
           </div>
-          <div class="wrap">
-            <button class="button">Solicitar Cotización</button>
-          </div>
-        </section>
+        </div> 
+      </section>
+      <div class="wrap">
+        <a href="contacto.html">
+          <button class="button">Solicitar Cotización</button>
+        </a>
+      </div>
+      <div>
+        <img src="img/eco friendly.jpg" alt="img-eco">
+      </div> 
         <section class="section-eco">
-          <div class="section-eco__bg">
-            <img src="img/fondo-eco.jpg" alt="naturaleza">
-          </div>
+          <p class="p-eco"> A diferencia del 99,9% de los productos de limpieza, 
+            renovación y protección a base de solventes ácidos inorgánicos, 
+            y otros tipos de contaminantes, nuestras plantas de producción utilizan 
+            únicamente ácidos orgánicos derivados de vegetales y cítricos. Los productos 
+            de limpieza, se degradan en 20 días sin dejar huella ambiental. Los productos 
+            de protección tienen hasta 96% de base acuosa, y son certificados LEED, y han 
+            ganado en los últimos años, variados reconocimientos y premios ambientales. </p>
         </section>   
     
       <h2 class="wow h2-index animate__animated animate__bounceInLeft ">Clientes</h2>
@@ -128,13 +151,45 @@
           </section>                                    
     </main>
     
-    <footer class="footer">
-        <img src="img/logo perf mini.jpg" alt="mini-logo">
-        <h6 class="footer__h6">095 049 110</h6>
-        <h6 class="footer__h6">091 467 800</h6>
-        <h6 class="footer__h6">performance-eco@gmail.com</h6>
-        <h6 class="footer__h6">Montevideo, Uruguay</h6>
-        <h6 class="footer__h6">Todos los derechos reservados. Hecho por Gerónimo Iruleguy.</h6>
+    <footer>
+      <img src="img/logo perf.jpg" alt="logo-performance">
+      <section class="body-footer">
+        <ul class="footer-navbar">
+          <li class="footer-navbar__li">
+            <a href="index.html">Inicio</a>
+          </li>
+          <li class="footer-navbar__li">
+            <a href="quienes somos.html">Quiénes Somos</a>
+          </li>
+          <li class="footer-navbar__li">
+            <a href="servicios.html">Servicios</a>
+          </li>
+          <li class="footer-navbar__li">
+            <a href="trabajos.html">Trabajos</a>
+          </li>
+          <li class="footer-navbar__li">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+    
+        <ul class="footer-datos">
+          <li class="footer-datos__li">
+            <i class="fas fa-phone-alt"></i>
+            <h6 class="footer__h6">091 467 800</h6>
+          </li>
+          <li class="footer-datos__li">
+            <i class="fas fa-envelope"></i>
+            <h6 class="footer__h6">performance-eco@gmail.com</h6>
+          </li>
+          <li class="footer-datos__li">
+            <i class="fas fa-map-marker-alt"></i>
+            <h6 class="footer__h6">Montevideo, Uruguay</h6>
+          </li>
+        </ul>
+        <div class="derechos">
+          <h6 class="footer__h6">Todos los derechos reservados. Desarrollo y diseño por Gerónimo Iruleguy.</h6>
+        </div>
+      </section>  
     </footer>   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,0 +1,335 @@
+//Index
+
+main{
+    width: auto;
+    .h2-index{
+        font-family: 'Rubik', sans-serif;
+        font-size: 3rem;
+        color: $azulOscuroH2;
+        text-align: center;
+        padding: 0;
+        margin-top: 150px;
+    }
+    .p-index{
+        font-family: 'Rubik', sans-serif;
+        color: $azulOscuro;
+        margin: 25px;
+        line-height: 1.5rem;
+    }
+    .h4-index{
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        color: $azulOscuro;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    .carousel-item{
+        min-width: 800px;
+        .txt-slider{
+            color: $azulOscuroH2;
+        }
+        .h5-important{
+            color: $azulOscuroH2;
+        }
+        h5{
+            font-size: 3rem;
+            text-align: right;
+            color: white;
+        }
+        p{
+            font-size: 2rem;
+            text-align: right;
+        }
+    }
+
+    .nuest-serv{
+        display: flex;
+        flex-direction: row;
+        .card-serv{
+            margin-top: 30px;
+            border: none;
+            justify-content: center;
+            padding: 3rem;
+            font-family: 'Rubik', sans-serif;
+            color: $azulOscuro;
+            text-align: center;
+            align-items: center;
+            .card-serv_img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            .card-body{
+                text-align: center;
+                align-content: center;
+                }
+            }
+        }
+    }    
+    .como-trabajamos{
+        width: auto;
+        display: flex;
+        flex-direction: column; 
+        .section-ct_text1{
+            text-align: left;
+            justify-content: center;
+            font-family: 'Rubik', sans-serif;
+            color: $azulOscuro;
+            margin: 40px;
+            animation-fill-mode: none;
+            animation-delay: 1s;
+            .card1{
+                margin-left: 5%;
+                border: none;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                .card-body{
+                    .card-title{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                    .card-text{
+                        font-size: 1.2rem;
+                    }
+                }
+            }  
+        }
+        .section-ct_text2{
+            text-align: center;
+            justify-content: center;
+            font-family: 'Rubik', sans-serif;
+            color: $azulOscuro;
+            animation-fill-mode: none;
+            animation-delay: 2s;
+            .card2{
+                margin-left: 40%;
+                border: none;
+                border-radius: 50%;
+                width: 200px;
+                height: 150px;
+                .card-body{
+                    .card-title{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                    .card-text{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .section-ct_text3{
+            text-align: right;
+            justify-items: center;
+            font-family: 'Rubik', sans-serif;
+            color: $azulOscuro;
+            margin-right: 40px;
+            animation-fill-mode: none;
+            animation-delay: 3s; 
+            .card3{
+                margin-left: 75%;
+                padding-bottom: 5px;
+                border: none;
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                .card-body{
+                    .card-title{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                    .card-text{
+                        font-size: 1.2rem;
+                    }
+                }
+            }  
+        }
+    }    
+    .wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            .button {
+            margin-top: 50px;
+            width: 270px;
+            height: 60px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            letter-spacing: none;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            background-color: $azulOscuro;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            padding: 5px;
+            }
+            .button:hover {
+            background-color: $verdeTurquesa;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+            }
+        }
+    }  
+    .section-clientes{
+        margin-top: 100px;
+        width: 95%;
+        height: 800px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo1 logo2 logo3"
+        "logo4 logo5 logo6"
+        "logo7 logo7 logo7";
+        gap: 5px;
+        justify-items: center;
+        }
+        .logo1{
+            grid-area: logo1;    
+        }
+        .logo2{
+            grid-area: logo2;    
+        }
+        .logo3{
+            grid-area: logo3;    
+        }
+        .logo4{
+            grid-area: logo4;    
+        }
+        .logo5{
+            grid-area: logo5;    
+        }
+        .logo6{
+            grid-area: logo6;    
+        }
+        .logo7{
+            grid-area: logo7;    
+        }
+}    
+     
+
+@media(max-width: 1208px){
+    main{
+        .nuest-serv{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            .card-serv{
+                
+                .card-serv_img{
+                    width: 150px;
+                    height: 150px;
+                    align-items: center;    
+                }
+                .card-body{
+                    width: 1000px;
+                    text-align: center;
+                    text-align: stretch;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px){
+    main{
+        .nuest-serv{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            .card-serv{
+                margin-left: 150px;
+                .card-serv_img{
+                    width: 150px;
+                    height: 150px;
+                    align-items: center;    
+                }
+                .card-body{
+                    width: 600px;
+                    text-align: center;
+                    text-align: stretch;
+                }
+            }
+        }
+        .como-trabajamos{
+            .section-ct_text1{
+                margin: 20px;
+                .card1{
+                    margin-left: 2.5%;
+                }
+            }
+            .section-ct_text2{
+                margin: 20px;
+                .card2{
+                    margin-left: 30%;
+                }
+            }
+            .section-ct_text3{
+            margin: 20px;
+            .card3{
+                margin-left: 60%;
+                }
+            }
+        }        
+    }
+}
+
+@media(max-width: 710px){
+    main{
+        .h2-index{
+            text-align: center;
+            width: 100%;
+        }
+        .carousel{
+            width: 710px;
+        }
+    }
+}
+
+@media(max-width:425px){
+    main{
+        .como-trabajamos{
+            .section-ct_text1{
+                margin: 20px;
+                .card1{
+                    margin-left: 2.5%;
+                }
+            }
+            .section-ct_text2{
+                margin: 20px;
+                .card2{
+                    margin-left: 30%;
+                }
+            }
+            .section-ct_text3{
+            margin: 20px;
+            .card3{
+                margin-left: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    main{
+        .seccion-clientes{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
+}
+
+
