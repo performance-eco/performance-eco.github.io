@@ -43,6 +43,23 @@
                             background-color: rgb(241, 240, 240);
                         }                              
                     }
+                    .cotizacion-labels-buttons{
+                        .button-label{
+                            background-color: white;
+                            border-width: 1px;
+                            border: solid;
+                            font-family: 'Rubik', sans-serif;
+                            color: $azulOscuroH2;
+                            padding: 3px;
+                            margin: 5px;
+                            border-radius: 2rem;
+                            &:hover{
+                                background-color: rgb(17, 219, 169);
+                                color: white;
+                                transform: scale(1.2)
+                            };
+                        }
+                    }
                 } 
             }  
     }

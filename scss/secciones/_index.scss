@@ -1,15 +1,14 @@
 //Index
 
 main{
-    width: auto;
     .h2-index{
-        font-family: 'Rubik', sans-serif;
-        font-size: 3rem;
-        color: $azulOscuroH2;
-        text-align: center;
-        padding: 0;
-        margin-top: 150px;
-    }
+            font-family: 'Rubik', sans-serif;
+            font-size: 3rem;
+            color: $azulOscuroH2;
+            text-align: center;
+            margin-top: 150px;
+        }
+    
     .p-index{
         font-family: 'Rubik', sans-serif;
         color: $azulOscuro;
@@ -24,12 +23,14 @@ main{
         margin-top: 50px;
     }
     .carousel-item{
-        min-width: 800px;
+        min-width: 320px;
         .txt-slider{
+            font-size: 3rem;
             color: $azulOscuroH2;
         }
         .h5-important{
             color: $azulOscuroH2;
+            font-size: 3rem;
         }
         h5{
             font-size: 3rem;
@@ -67,6 +68,7 @@ main{
     }    
     .como-trabajamos{
         width: auto;
+        min-width: 320px;
         display: flex;
         flex-direction: column; 
         .section-ct_text1{
@@ -241,6 +243,28 @@ main{
 }
 
 
+@media (max-width: 1205px){
+    main{
+        .nuest-serv{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            .card-serv{
+                margin-left: 9.375rem;
+                .card-serv_img{
+                    width: 9.375rem;
+                    height: 9.375rem;
+                    align-items: center;    
+                }
+                .card-body{
+                    width: 600px;
+                    text-align: center;
+                    text-align: stretch;
+                }
+            }
+        }
+    }
+}    
 
 @media (max-width: 768px){
     main{
@@ -249,10 +273,10 @@ main{
             flex-direction: column;
             width: auto;
             .card-serv{
-                margin-left: 150px;
+                margin-left: 9.375rem;
                 .card-serv_img{
-                    width: 150px;
-                    height: 150px;
+                    width: 9.375rem;
+                    height: 9.375rem;
                     align-items: center;    
                 }
                 .card-body{
@@ -297,8 +321,12 @@ main{
     }
 }
 
-@media(max-width:425px){
-    main{
+@media (max-width:425px){
+    main {
+        width: auto;
+        .h2-index{
+            width: auto;
+        }
         .como-trabajamos{
             .section-ct_text1{
                 margin: 20px;
@@ -324,6 +352,19 @@ main{
 
 @media (max-width: 480px){
     main{
+        .seccion-clientes{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+    }
+}
+
+@media (max-width:375px){
+    main{
+        .carousel-item{
+            width: 375px;
+        }
         .seccion-clientes{
             display: grid;
             grid-template-columns: 1fr;

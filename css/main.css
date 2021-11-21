@@ -4,11 +4,11 @@
   box-sizing: border-box; }
 
 footer {
-  width: auto;
+  min-width: 320px;
   background-color: #6fd4aa;
   position: inherit;
   display: flex;
-  height: 310px; }
+  height: auto; }
   footer img {
     width: 100px;
     height: 100px;
@@ -56,11 +56,9 @@ footer {
 
 @media (max-width: 425px) {
   footer {
-    width: auto;
     display: block; } }
 
 .header {
-  width: auto;
   display: flex;
   flex-direction: row;
   margin: 10px 0;
@@ -136,6 +134,10 @@ footer {
       cursor: pointer; }
   .icons-header .icons-header_wapp:hover {
     cursor: pointer; }
+
+@media (max-width: 768px) {
+  .header .container nav a img {
+    margin-left: 5px; } }
 
 @media (max-width: 425px) {
   .header {
@@ -295,6 +297,19 @@ main .nuestros-serv {
       .main-contacto form .fieldset-cont div .cotizacion-labels textarea {
         border-style: solid;
         background-color: #f1f0f0; }
+    .main-contacto form .fieldset-cont div .cotizacion-labels-buttons .button-label {
+      background-color: white;
+      border-width: 1px;
+      border: solid;
+      font-family: 'Rubik', sans-serif;
+      color: #516386;
+      padding: 3px;
+      margin: 5px;
+      border-radius: 2rem; }
+      .main-contacto form .fieldset-cont div .cotizacion-labels-buttons .button-label:hover {
+        background-color: #11dba9;
+        color: white;
+        transform: scale(1.2); }
   .main-contacto .p-cont {
     font-family: 'Rubik', sans-serif;
     color: #516386;
@@ -322,171 +337,185 @@ main .nuestros-serv {
   .main-contacto form .fieldset-cont {
     margin: 30px; } }
 
-main {
-  width: auto; }
-  main .h2-index {
-    font-family: 'Rubik', sans-serif;
+main .h2-index {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3rem;
+  color: #516386;
+  text-align: center;
+  margin-top: 150px; }
+
+main .p-index {
+  font-family: 'Rubik', sans-serif;
+  color: #6c7fa5;
+  margin: 25px;
+  line-height: 1.5rem; }
+
+main .h4-index {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  color: #6c7fa5;
+  padding: 10px;
+  margin-top: 50px; }
+
+main .carousel-item {
+  min-width: 320px; }
+  main .carousel-item .txt-slider {
     font-size: 3rem;
+    color: #516386; }
+  main .carousel-item .h5-important {
     color: #516386;
+    font-size: 3rem; }
+  main .carousel-item h5 {
+    font-size: 3rem;
+    text-align: right;
+    color: white; }
+  main .carousel-item p {
+    font-size: 2rem;
+    text-align: right; }
+
+main .nuest-serv {
+  display: flex;
+  flex-direction: row; }
+  main .nuest-serv .card-serv {
+    margin-top: 30px;
+    border: none;
+    justify-content: center;
+    padding: 3rem;
+    font-family: 'Rubik', sans-serif;
+    color: #6c7fa5;
     text-align: center;
-    padding: 0;
-    margin-top: 150px; }
-  main .p-index {
+    align-items: center; }
+    main .nuest-serv .card-serv .card-serv_img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px; }
+      main .nuest-serv .card-serv .card-serv_img .card-body {
+        text-align: center;
+        align-content: center; }
+
+main .como-trabajamos {
+  width: auto;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column; }
+  main .como-trabajamos .section-ct_text1 {
+    text-align: left;
+    justify-content: center;
     font-family: 'Rubik', sans-serif;
     color: #6c7fa5;
-    margin: 25px;
-    line-height: 1.5rem; }
-  main .h4-index {
+    margin: 40px;
+    animation-fill-mode: none;
+    animation-delay: 1s; }
+    main .como-trabajamos .section-ct_text1 .card1 {
+      margin-left: 5%;
+      border: none;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px; }
+      main .como-trabajamos .section-ct_text1 .card1 .card-body .card-title {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      main .como-trabajamos .section-ct_text1 .card1 .card-body .card-text {
+        font-size: 1.2rem; }
+  main .como-trabajamos .section-ct_text2 {
+    text-align: center;
+    justify-content: center;
     font-family: 'Rubik', sans-serif;
-    font-size: 1.5rem;
     color: #6c7fa5;
-    padding: 10px;
-    margin-top: 50px; }
-  main .carousel-item {
-    min-width: 800px; }
-    main .carousel-item .txt-slider {
-      color: #516386; }
-    main .carousel-item .h5-important {
-      color: #516386; }
-    main .carousel-item h5 {
-      font-size: 3rem;
-      text-align: right;
-      color: white; }
-    main .carousel-item p {
-      font-size: 2rem;
-      text-align: right; }
-  main .nuest-serv {
-    display: flex;
-    flex-direction: row; }
-    main .nuest-serv .card-serv {
-      margin-top: 30px;
+    animation-fill-mode: none;
+    animation-delay: 2s; }
+    main .como-trabajamos .section-ct_text2 .card2 {
+      margin-left: 40%;
       border: none;
-      justify-content: center;
-      padding: 3rem;
-      font-family: 'Rubik', sans-serif;
-      color: #6c7fa5;
-      text-align: center;
-      align-items: center; }
-      main .nuest-serv .card-serv .card-serv_img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px; }
-        main .nuest-serv .card-serv .card-serv_img .card-body {
-          text-align: center;
-          align-content: center; }
-  main .como-trabajamos {
-    width: auto;
-    display: flex;
-    flex-direction: column; }
-    main .como-trabajamos .section-ct_text1 {
-      text-align: left;
-      justify-content: center;
-      font-family: 'Rubik', sans-serif;
-      color: #6c7fa5;
-      margin: 40px;
-      animation-fill-mode: none;
-      animation-delay: 1s; }
-      main .como-trabajamos .section-ct_text1 .card1 {
-        margin-left: 5%;
-        border: none;
-        border-radius: 50%;
-        width: 200px;
-        height: 200px; }
-        main .como-trabajamos .section-ct_text1 .card1 .card-body .card-title {
-          font-size: 1.5rem;
-          font-weight: bold; }
-        main .como-trabajamos .section-ct_text1 .card1 .card-body .card-text {
-          font-size: 1.2rem; }
-    main .como-trabajamos .section-ct_text2 {
-      text-align: center;
-      justify-content: center;
-      font-family: 'Rubik', sans-serif;
-      color: #6c7fa5;
-      animation-fill-mode: none;
-      animation-delay: 2s; }
-      main .como-trabajamos .section-ct_text2 .card2 {
-        margin-left: 40%;
-        border: none;
-        border-radius: 50%;
-        width: 200px;
-        height: 150px; }
-        main .como-trabajamos .section-ct_text2 .card2 .card-body .card-title {
-          font-size: 1.5rem;
-          font-weight: bold; }
-        main .como-trabajamos .section-ct_text2 .card2 .card-body .card-text {
-          font-size: 1.2rem; }
-    main .como-trabajamos .section-ct_text3 {
-      text-align: right;
-      justify-items: center;
-      font-family: 'Rubik', sans-serif;
-      color: #6c7fa5;
-      margin-right: 40px;
-      animation-fill-mode: none;
-      animation-delay: 3s; }
-      main .como-trabajamos .section-ct_text3 .card3 {
-        margin-left: 75%;
-        padding-bottom: 5px;
-        border: none;
-        border-radius: 50%;
-        width: 200px;
-        height: 200px; }
-        main .como-trabajamos .section-ct_text3 .card3 .card-body .card-title {
-          font-size: 1.5rem;
-          font-weight: bold; }
-        main .como-trabajamos .section-ct_text3 .card3 .card-body .card-text {
-          font-size: 1.2rem; }
-  main .wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    main .wrap a .button {
-      margin-top: 50px;
-      width: 270px;
-      height: 60px;
-      font-family: 'Rubik', sans-serif;
-      font-size: 20px;
-      letter-spacing: none;
-      font-weight: bold;
-      color: white;
-      text-transform: uppercase;
-      background-color: #6c7fa5;
+      border-radius: 50%;
+      width: 200px;
+      height: 150px; }
+      main .como-trabajamos .section-ct_text2 .card2 .card-body .card-title {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      main .como-trabajamos .section-ct_text2 .card2 .card-body .card-text {
+        font-size: 1.2rem; }
+  main .como-trabajamos .section-ct_text3 {
+    text-align: right;
+    justify-items: center;
+    font-family: 'Rubik', sans-serif;
+    color: #6c7fa5;
+    margin-right: 40px;
+    animation-fill-mode: none;
+    animation-delay: 3s; }
+    main .como-trabajamos .section-ct_text3 .card3 {
+      margin-left: 75%;
+      padding-bottom: 5px;
       border: none;
-      border-radius: 45px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease 0s;
-      cursor: pointer;
-      outline: none;
-      padding: 5px; }
-    main .wrap a .button:hover {
-      background-color: #4fc4aa;
-      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-      color: #fff;
-      transform: translateY(-7px); }
-  main .section-clientes {
-    margin-top: 100px;
-    width: 95%;
-    height: 800px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "logo1 logo2 logo3" "logo4 logo5 logo6" "logo7 logo7 logo7";
-    gap: 5px;
-    justify-items: center; }
-  main .logo1 {
-    grid-area: logo1; }
-  main .logo2 {
-    grid-area: logo2; }
-  main .logo3 {
-    grid-area: logo3; }
-  main .logo4 {
-    grid-area: logo4; }
-  main .logo5 {
-    grid-area: logo5; }
-  main .logo6 {
-    grid-area: logo6; }
-  main .logo7 {
-    grid-area: logo7; }
+      border-radius: 50%;
+      width: 200px;
+      height: 200px; }
+      main .como-trabajamos .section-ct_text3 .card3 .card-body .card-title {
+        font-size: 1.5rem;
+        font-weight: bold; }
+      main .como-trabajamos .section-ct_text3 .card3 .card-body .card-text {
+        font-size: 1.2rem; }
+
+main .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  main .wrap a .button {
+    margin-top: 50px;
+    width: 270px;
+    height: 60px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    letter-spacing: none;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: #6c7fa5;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    padding: 5px; }
+  main .wrap a .button:hover {
+    background-color: #4fc4aa;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px); }
+
+main .section-clientes {
+  margin-top: 100px;
+  width: 95%;
+  height: 800px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "logo1 logo2 logo3" "logo4 logo5 logo6" "logo7 logo7 logo7";
+  gap: 5px;
+  justify-items: center; }
+
+main .logo1 {
+  grid-area: logo1; }
+
+main .logo2 {
+  grid-area: logo2; }
+
+main .logo3 {
+  grid-area: logo3; }
+
+main .logo4 {
+  grid-area: logo4; }
+
+main .logo5 {
+  grid-area: logo5; }
+
+main .logo6 {
+  grid-area: logo6; }
+
+main .logo7 {
+  grid-area: logo7; }
 
 @media (max-width: 1208px) {
   main .nuest-serv {
@@ -502,16 +531,32 @@ main {
       text-align: center;
       text-align: stretch; } }
 
+@media (max-width: 1205px) {
+  main .nuest-serv {
+    display: flex;
+    flex-direction: column;
+    width: auto; }
+    main .nuest-serv .card-serv {
+      margin-left: 9.375rem; }
+      main .nuest-serv .card-serv .card-serv_img {
+        width: 9.375rem;
+        height: 9.375rem;
+        align-items: center; }
+      main .nuest-serv .card-serv .card-body {
+        width: 600px;
+        text-align: center;
+        text-align: stretch; } }
+
 @media (max-width: 768px) {
   main .nuest-serv {
     display: flex;
     flex-direction: column;
     width: auto; }
     main .nuest-serv .card-serv {
-      margin-left: 150px; }
+      margin-left: 9.375rem; }
       main .nuest-serv .card-serv .card-serv_img {
-        width: 150px;
-        height: 150px;
+        width: 9.375rem;
+        height: 9.375rem;
         align-items: center; }
       main .nuest-serv .card-serv .card-body {
         width: 600px;
@@ -538,20 +583,32 @@ main {
     width: 710px; } }
 
 @media (max-width: 425px) {
-  main .como-trabajamos .section-ct_text1 {
-    margin: 20px; }
-    main .como-trabajamos .section-ct_text1 .card1 {
-      margin-left: 2.5%; }
-  main .como-trabajamos .section-ct_text2 {
-    margin: 20px; }
-    main .como-trabajamos .section-ct_text2 .card2 {
-      margin-left: 30%; }
-  main .como-trabajamos .section-ct_text3 {
-    margin: 20px; }
-    main .como-trabajamos .section-ct_text3 .card3 {
-      margin-left: 60%; } }
+  main {
+    width: auto; }
+    main .h2-index {
+      width: auto; }
+    main .como-trabajamos .section-ct_text1 {
+      margin: 20px; }
+      main .como-trabajamos .section-ct_text1 .card1 {
+        margin-left: 2.5%; }
+    main .como-trabajamos .section-ct_text2 {
+      margin: 20px; }
+      main .como-trabajamos .section-ct_text2 .card2 {
+        margin-left: 30%; }
+    main .como-trabajamos .section-ct_text3 {
+      margin: 20px; }
+      main .como-trabajamos .section-ct_text3 .card3 {
+        margin-left: 60%; } }
 
 @media (max-width: 480px) {
+  main .seccion-clientes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; } }
+
+@media (max-width: 375px) {
+  main .carousel-item {
+    width: 375px; }
   main .seccion-clientes {
     display: grid;
     grid-template-columns: 1fr;

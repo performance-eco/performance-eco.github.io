@@ -1,7 +1,6 @@
 //Header
  
 .header{
-    width: auto;
     display: flex;
     flex-direction: row;
     margin: 10px 0;
@@ -110,6 +109,21 @@
     }    
    
 } 
+
+@media (max-width: 768px){
+    .header{
+        .container{
+            nav{
+                a{
+                    img{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+    
 
 
 @media(max-width: 425px){
